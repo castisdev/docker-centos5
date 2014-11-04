@@ -7,6 +7,7 @@ RUN rpm -ivh http://dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noar
 # Install
 RUN \
   yum install -y sudo wget gcc gcc-c++ make unzip openssl openssl-devel;\
+  yum install -y boost-devel glibc-devel.i386 e2fsprogs-devel.i386;\
   yum install -y git cppcheck;\
   yum -y clean all
 
