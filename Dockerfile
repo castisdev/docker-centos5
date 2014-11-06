@@ -19,7 +19,7 @@ RUN yum install -y\
   subversion\
   boost-devel\
   glibc-devel\
-  e2fsprogs-devel.i386;\
+  e2fsprogs-devel;\
   yum -y clean all
 
 ADD install_cmake30.sh /script/
