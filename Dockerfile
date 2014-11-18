@@ -5,21 +5,22 @@ FROM centos:centos5
 RUN rpm -ivh http://dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm
 
 # Install
-RUN yum install -y\
-  sudo\
-  wget\
-  gcc\
-  gcc-c++\
-  make\
-  unzip\
-  openssl\
-  openssl-devel\
-  git\
-  cppcheck\
-  subversion\
-  boost-devel\
-  glibc-devel\
-  e2fsprogs-devel;\
+RUN yum install -y \
+  sudo \
+  wget \
+  gcc \
+  gcc-c++ \
+  make \
+  unzip \
+  openssl \
+  openssl-devel \
+  git \
+  cppcheck \
+  subversion \
+  boost-devel \
+  glibc-devel \
+  e2fsprogs-devel \
+  gdb; \
   yum -y clean all
 
 ADD install_cmake30.sh /script/
