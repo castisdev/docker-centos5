@@ -50,6 +50,9 @@ RUN /script/install_python34.sh
 ADD install_cpptools.sh /script/
 RUN /script/install_cpptools.sh
 
+ADD install_xercesc280.sh /script/
+RUN /script/install_xercesc280.sh
+
 # Add root files
 ADD .bashrc /root/.bashrc
 ADD legacy_mode.sh /root/
