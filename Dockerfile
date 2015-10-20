@@ -21,7 +21,6 @@ RUN yum install -y \
   glibc-devel \
   e2fsprogs-devel \
   gdb \
-  golang \
   valgrind; \
   yum -y clean all
 
